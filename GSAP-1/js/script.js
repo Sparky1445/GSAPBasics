@@ -2,6 +2,21 @@ var tl = gsap.timeline();
 
 // now we can use tl.to and tl.from instead of gsap.to and gsap.from
 // The code will execute synchronousely
+tl.to("#NavTitle", {
+    y: 30,
+    duration: 1,
+    delay: 0.5,
+    opacity: 1,
+
+})
+tl.to("h4", {
+    y: 30,
+    duration: 1,
+    delay: 0.5,
+    opacity: 1,
+    stagger: 0.3
+})
+
 
 gsap.to("#box1", {
     x: 1000,
