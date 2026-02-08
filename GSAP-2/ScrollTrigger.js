@@ -12,7 +12,7 @@ gsap.from("#page2 h1", {
         scroller: "body",
         markers: true,
         start: "top 0%",
-        end: "top -100%",
+        end: "bottom 0%",
         scrub:1,
         pin:true,
 
