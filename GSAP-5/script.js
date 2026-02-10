@@ -4,6 +4,7 @@ let closeIcon = document.querySelector("#full i");
 let full = document.querySelector("#full");
 
 
+
     tl.to("#full",{
         right:"0%",
         duration:1,
@@ -30,6 +31,7 @@ menuIcon.addEventListener("click",()=>{
 closeIcon.addEventListener("click",()=>{
     tl.reverse();
 });
+
 
 
 // tl.pause(); this will pause the timeline and we can play it again whenever we want
