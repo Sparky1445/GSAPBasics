@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+@font-face{
+    font-family: 'Neue Machina';
+    src: url('NeueMachina-Regular.otf');    
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: poppins;
+    
 }
 
 .section1{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    
 }
 
 nav{
+    margin-top: 20px;
     padding: 1.2vw 3vw;
     display: flex;
     align-items: center;
@@ -52,4 +61,220 @@ nav button {
     font-weight: 500;
     background-color: transparent;
     opacity: 0.9;
+}
+
+.center{
+    height: 80%;
+    width: 100%;
+    display: flex; 
+    margin-top: 59px;
+
+
+}
+
+.center-1{
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    height: 100%;
+    width: 50%;
+}
+
+.center-1 h4{
+    font-weight: 500;
+    padding-right: 150px;
+}
+
+.center-1 h1{
+    
+    font-size: 60px;
+    font-family: 'Neue Machina';
+}
+
+.center-1 button{
+    padding: 1vw 2vw;
+    border-radius: 13px;
+    border: 1px solid #000;
+    background-color:black;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Neue Machina';
+    letter-spacing:2.2px;
+    opacity: 0.9;
+    width: 45%;
+}
+
+.center-2{
+    height: 100%;
+    width: 60%;
+    margin-right: 3vw;
+    padding-left:150px;
+}
+.center-2 img{
+    height: 550px;
+    
+    
+}
+
+.AffCompanies{
+    
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    gap: 9vw;    
+    
+}
+
+.AffCompanies img{
+    height: 100px;
+    
+}
+
+.services{
+    margin-top: 50px;
+    display: flex;
+    width: 50%;
+    padding-left:3vw;
+    gap: 50px;
+}
+
+.services h1{
+    background-color: #BCD85F;
+    font-family: Neue Machina;
+    padding: 5px;
+    
+
+}
+
+.services p{
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.section3{
+    margin-top:80px;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+.whiteCard, .blackCard{
+    display: flex;
+    height: 300px;
+    width: 45%;
+    border-radius: 30px;
+    box-shadow: 0 10px 0 0 #000;
+    padding: 40px 50px;
+    justify-content: space-between;
+}
+
+.whiteCard{
+    border: 2px solid #000;
+}
+
+.blackCard{
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.cardLeft{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.cardRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.cardImage{
+    height:80%;
+}
+
+.blackCard .cardImage {
+    background-color: #000;
+    mix-blend-mode: screen;
+    filter: invert(1);
+}
+
+.LearnMoreWhite {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.LearnMoreWhite span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+
+.whiteCard .LearnMoreWhite span {
+    color: #000;
+}
+.whiteCard .icon-circle {
+    background-color: #000;
+    color: #fff;
+}
+
+.blackCard .LearnMoreWhite span {
+    color: #fff;
+}
+.blackCard .icon-circle {
+    background-color: #fff;
+    color: #000;
+}
+
+.cardLeft h1 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.whiteCard h1{
+    display: inline;
+    background-color: #BCD85F;
+    border-radius: 5px;
+    padding: 2px 7px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.blackCard h1{
+    display: inline;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 2px 7px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
